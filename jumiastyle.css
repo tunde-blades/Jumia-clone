@@ -13,10 +13,11 @@
 }
 @media(min-width: 771px){
 	.container{
+		width: 100%;
 		display: grid;
-		padding: 0px;
+		padding: 0 20px;
 		margin:0px;
-		grid-template-columns: 0.3fr 1fr 0.3fr;
+		grid-template-columns: 0.3fr .8fr 0.3fr;
 		grid-template-rows: 0.12fr 0.15fr 0.1fr 0.9fr 0.12fr;
 		grid-template-areas: 	
 		" nav1 nav1 nav1"
@@ -24,11 +25,12 @@
 		" nav3 nav3 nav3"
 		" nav4 nav5 nav6"
 		" navfoot navfoot navfoot";
+		overflow: hidden;
 	}
 	.nav1{
 			margin: 0px;
 			padding: 0px;
-			width: 100vw;
+			width: 100%;
 			background-size:  cover;
 	 		background-repeat: no-repeat;
 			grid-area: nav1;
@@ -37,12 +39,12 @@
 		display: none;
 	}
 	.nav2{
-		display:grid;
-		grid-template-columns: 2fr .5fr .5fr .5fr .5fr .5fr .5fr;
-		grid-template-rows: 0.2fr;
-		justify-content: space-between;
+		width: 75vw;
+		display:flex;
 		align-items: center;
+		justify-content: space-between;
 		grid-area: nav2;
+		padding: 10px;
 	}
 
 	.sell{
@@ -52,15 +54,16 @@
 		display: 
 	}
 	.jpf{
+		width: 60%;
 		display: grid;
 		grid-template-columns:.9fr .3fr .4fr .5fr .3fr;
 		justify-content: space-between;
 		align-items: center;
+		font-size: 16px;
 	}
 	.jumia1{
 		display: flex;
 		flex-direction: row;
-		font-size: 2vw;
 		text-align: center;
 		font-family: 'Cabin Condensed', sans-serif;
 		text-transform: uppercase;
@@ -69,30 +72,30 @@
 	.pay{
 		display: flex;
 		flex-direction: row;
-		font-size: 1.6vw;
 		color: grey;
-		text-transform: uppercase;
+		gap: 3px;
+		text-transform: capitalize;
 	}
 	.food{
 		display: flex;
 		flex-direction: row;
-		font-size: 1.6vw;
 		color: grey;
-		text-transform: uppercase;
+		gap: 3px;
+		text-transform: capitalize;
 	}
 	.party{
 		display: flex;
 		flex-direction: row;
-		font-size: 1.6vw;
 		color: grey;
-		text-transform: uppercase;
+		gap: 3px;
+		text-transform: capitalize;
 	}
 	.now{
 		display: flex;
 		flex-direction: row;
-		font-size: 1.6vw;
+		gap: 3px;
 		color: grey;
-		text-transform: uppercase;
+		text-transform: capitalize;
 	}
 	.pay:hover{
 		color: steelblue;
@@ -120,9 +123,9 @@
 	.nav3{
 		padding: 0px;
 		display: grid;
-		grid-template-columns: 0.7fr 1.5fr 0.6fr;
+		grid-template-columns: 0.7fr 1.2fr 0.8fr;
 		justify-content: space-around;
-		align-items: stretch;
+		align-items: center;
 		grid-area: nav3;
 	}
 	.jumia2{
@@ -167,7 +170,7 @@
 		background-color: darkorange;
 		border-radius: 5px;
 		margin-left: 5px;
-		width: 9vw;
+		width: 80px;
 	}
 	i[class="fas fa-search"]{
 		color: grey;
@@ -175,20 +178,22 @@
 	.account{
 		display: flex;
 		flex-direction: row;
+		justify-items: space-between;
+		padding:0 10px ;
 		text-transform: capitalize;
-		font-size: 2vw;
+		font-size:15px;
 	}
 	.help{
 		display: flex;
 		flex-direction: row;
 		text-transform: capitalize;
-		font-size: 2vw;
+		font-size: 15px;
 	}
 	.cart{
 		display: flex;
 		flex-direction: row;
 		text-transform: capitalize;
-		font-size: 2vw;
+		font-size: 15px;
 	}
 	.account:hover{
 		cursor: pointer;
